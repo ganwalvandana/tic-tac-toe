@@ -39,6 +39,18 @@ body{
     border: none;
     font-size: 8vmin;
     color: brown;
+    background-color: blanchedalmond;
+}
+
+#newBtn{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    background-color: brown;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    margin: 0 4rem;
+    display: none;
 }
 
 #resetBtn{
@@ -48,5 +60,17 @@ body{
     color: white;
     border-radius: 1rem;
     border: none;
+    margin: 0 4rem;
+}
+
+#msg{
+    font-size: 5vmin;
+    color: white;
+    padding-bottom: 2vmin;
+    display: none;
+}
+
+.message{
+ height: 20vmin;
 }
 
