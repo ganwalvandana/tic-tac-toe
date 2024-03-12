@@ -37,6 +37,7 @@ const reset = () => {
     enableBoxes();
     message.style.display = "none";
     newGame.style.display = "none";
+    resetGame.style.display = "inline-block";
 
 
 }
@@ -53,10 +54,24 @@ const enableBoxes = () => {
     })
 }
 
+
 const showWinner = (winner) => {
     message.innerText = `Winner is ${winner}`;
+    if (winner) {
+        confetti({
+            particleCount: 3000,
+            startVelocity: 50,
+            spread: 360,
+            origin: {
+                x: Math.random(),
+                y: Math.random() - 0.5
+            }
+        })
+    }
+    
     message.style.display = "block";
     newGame.style.display = "inline-block";
+    resetGame.style.display = "none";
     disableBoxes();
 }
 
